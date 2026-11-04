@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#100C08">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Chambérienne">
+<meta name="application-name" content="Chambérienne">
+<meta name="referrer" content="no-referrer">
+<link rel="apple-touch-icon" sizes="180x180" type="image/png" href="./apple-touch-icon-v3.png">
+<link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png">
+<link rel="manifest" href="./manifest.webmanifest">
+<title>La Chambérienne — Espace Bénévoles</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,-apple-system,"Segoe UI",sans-serif;background:#100c08;color:#f7f6ef}
+*{box-sizing:border-box}body{margin:0;min-height:100dvh;display:grid;place-items:center;padding:24px}
+main{width:min(100%,440px);text-align:center;background:#211f1b;border:1px solid #4d483c;border-radius:22px;padding:30px 23px}
+.logo{display:block;width:110px;height:110px;margin:0 auto 18px;border-radius:23px}
+h1{font-size:clamp(23px,6vw,30px);margin:0 0 8px;line-height:1.15}
+p{color:#d0cbbd;line-height:1.55}small{display:block;color:#b7b4a9;line-height:1.5}
+a.launch{display:block;background:#f2dc03;color:#100c08;font-weight:800;border-radius:13px;padding:16px;text-decoration:none;margin:22px 0 16px;min-height:52px}
+a.launch:focus-visible{outline:3px solid white;outline-offset:3px}
+a.launch[aria-disabled="true"]{pointer-events:none;opacity:.5}
+.instructions{margin:22px 0 0;border-top:1px solid #4d483c;padding-top:17px;text-align:left}
+.instructions strong{color:#f2dc03}
+#status{min-height:1.5em;font-size:14px}
+</style>
+<script src="./config.js"></script>
+<script src="./launch.js" defer></script>
+</head>
+<body>
+<main>
+<img class="logo" src="./apple-touch-icon-v3.png" width="110" height="110" alt="Logo éléphant de La Chambérienne">
+<h1>La Chambérienne</h1>
+<p>Espace Bénévoles — retrouvez vos missions, votre équipe et vos consignes.</p>
+<a id="launch" class="launch" href="#" aria-disabled="true">Ouvrir mon espace bénévole</a>
+<p id="status" role="status">Vérification du lien d'accès…</p>
+<section id="instructions" class="instructions">
+<strong>Installer le raccourci</strong>
+<p>Sur iPhone (Safari) : Partager → Sur l'écran d'accueil → Ajouter.</p>
+<p>Sur Android (Chrome) : menu ⋮ → Ajouter à l'écran d'accueil ou Installer l'application.</p>
+</section>
+<small>Le raccourci ouvre votre espace sécurisé sur Google Apps Script. Aucune donnée bénévole n'est stockée sur cette page.</small>
+</main>
+</body>
+</html>
